@@ -18,5 +18,9 @@
     "gulp-html": "^3.4.0",
     "gulp-rename": "^2.0.0",
     "gulp-uglify": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/sheng-zhongxuan/xiaomi.git"
   }
 }
