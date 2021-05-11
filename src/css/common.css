@@ -1,0 +1,26 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,input{
+	margin: 0;
+	padding: 0;
+}
+ul,ol,li{
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.clear{
+	clear: both;
+}
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+.login-nav-right>a{
+    display: inline-block;
+}
