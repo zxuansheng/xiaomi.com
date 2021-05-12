@@ -19,10 +19,10 @@
 
     if($result->num_rows>0){
         echo '<script>alert("登陆成功");</script>';
-        echo '<script>location.href="../src/首页.html";</script>';
+        echo '<script>location.href="../src/html/首页.html";</script>';
     }else{
         echo '<script>alert("用户名或密码错误");</script>';
-        echo '<script>location.href="../src/登录.html";</script>';
+        echo '<script>location.href="../src/html/登录.html";</script>';
     }
     
 ?>

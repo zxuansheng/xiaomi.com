@@ -35,7 +35,7 @@
 
     if($res){
         echo '<script>alert("注册成功");</script>';
-        echo '<script>location.href="../src/登录.html"</script>';
+        echo '<script>location.href="../src/html/登录.html"</script>';
     }
 
 ?>
