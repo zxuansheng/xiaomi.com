@@ -67,7 +67,7 @@
 .mi-header .mi-header-c .header-inp > span {
   transition: 0.5s;
   padding: 15px;
-  border: 2px black solid;
+  border: 1px black solid;
 }
 .mi-header .mi-header-c .header-inp > span:hover {
   background-color: orange;
@@ -75,8 +75,8 @@
 }
 .mi-header .list-m {
   width: 100%;
+  left: 0;
   position: absolute;
-  top: 100px;
   background-color: white;
   padding: 10px 0;
   z-index: 2;
@@ -84,14 +84,25 @@
   line-height: 20px;
   text-align: center;
 }
-.mi-header .list-m div ul li {
-  margin-left: 30px;
+.mi-header .list-m .head-phone {
+  width: 1170px;
+  margin: 0 auto;
 }
-.mi-header .list-m div ul li p {
-  font-size: 10px;
+.mi-header .list-m .head-phone ul li {
+  text-align: center;
 }
-.list-m.display {
-  display: block !important;
+.mi-header .list-m .head-phone ul li > :nth-child(2) {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.mi-header .list-m .head-phone ul li > :nth-child(3) {
+  font-size: 14px;
+  margin-top: 5px;
+  color: red;
+}
+.mi-header .list-m .head-phone ul li img {
+  height: 103px;
+  width: 149px;
 }
 .mi-body-carousel .mi-body-carousel-c {
   position: relative;
@@ -183,6 +194,7 @@
   height: 170px;
   background-color: #665e57;
   clear: both;
+  margin: 10px 0 15px 0;
 }
 .home-hero-sub .mi-body-ul3 .mi-body-ul3-li {
   float: left;
@@ -204,11 +216,11 @@
 .home-hero-sub .mi-body-ul4 li {
   float: left;
   transition: 0.2s;
+  margin: 10px 0 15px 11px;
 }
 .home-hero-sub .mi-body-ul4 li img {
   height: 170px;
-  width: 308px;
-  margin-left: 3px;
+  width: 300px;
 }
 .home-hero-sub .mi-body-ul4 li:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -261,14 +273,22 @@
   font-size: 22px;
   margin: 10px 0;
 }
+.page-main .pr-miusha {
+  position: relative;
+}
+.page-main .pr-miusha ul {
+  position: absolute;
+  left: 240px;
+}
 .page-main .pr-miusha ul li {
-  float: right;
+  float: left;
   height: 339px;
   width: 230px;
   border: 1px red solid;
   margin: 0 1px;
 }
 .page-main .mi-banner-1 > img {
+  margin-top: 20px;
   width: 100%;
 }
 .page-main .phone {
@@ -278,7 +298,7 @@
   font-size: 30px;
 }
 .page-main .phone .phone-img > img {
-  height: 600px;
+  height: 595px;
   margin-top: 10px;
 }
 .page-main .phone .phone-ul li {
@@ -313,6 +333,7 @@
 }
 .page-main .household-img > img {
   width: 100%;
+  margin-top: 20px 0 ;
 }
 .tabs div {
   background-color: white;
@@ -384,12 +405,12 @@
 }
 .page-main .household .household-main .house-main-c ul li {
   height: 280px;
-  width: 225px;
+  width: 220px;
   float: right;
   text-align: center;
   background-color: white;
   padding: 20px 0;
-  margin: 10px 3px;
+  margin: 13px 0 0 14px;
 }
 .page-main .household .household-main .house-main-c ul li div :nth-child(2) {
   font-size: 14px;
@@ -417,12 +438,12 @@
 }
 .page-main .household .household-main .house-main-c1 ul li {
   height: 280px;
-  width: 225px;
+  width: 220px;
   float: right;
   text-align: center;
   background-color: white;
   padding: 20px 0;
-  margin: 10px 3px;
+  margin: 13px 0 0 14px;
 }
 .page-main .household .household-main .house-main-c1 ul li div :nth-child(2) {
   font-size: 14px;
@@ -475,12 +496,12 @@
 }
 .page-main .mind .mind-main .mind-main-c ul li {
   height: 280px;
-  width: 225px;
+  width: 220px;
   float: right;
   text-align: center;
   background-color: white;
   padding: 20px 0;
-  margin: 10px 3px;
+  margin: 13px 0 0 14px;
 }
 .page-main .mind .mind-main .mind-main-c ul li div :nth-child(2) {
   font-size: 14px;
@@ -508,12 +529,12 @@
 }
 .page-main .mind .mind-main .mind-main-c1 ul li {
   height: 280px;
-  width: 225px;
+  width: 220px;
   float: right;
   text-align: center;
   background-color: white;
   padding: 20px 0;
-  margin: 10px 3px;
+  margin: 13px 0 0 14px;
 }
 .page-main .mind .mind-main .mind-main-c1 ul li div :nth-child(2) {
   font-size: 14px;
@@ -541,12 +562,12 @@
 }
 .page-main .mind .mind-main .mind-main-c2 ul li {
   height: 280px;
-  width: 225px;
+  width: 220px;
   float: right;
   text-align: center;
   background-color: white;
   padding: 20px 0;
-  margin: 10px 3px;
+  margin: 13px 0 0 14px;
 }
 .page-main .mind .mind-main .mind-main-c2 ul li div :nth-child(2) {
   font-size: 14px;
@@ -599,12 +620,12 @@
 }
 .page-main .fitting .fitting-main .fitting-main-c ul li {
   height: 280px;
-  width: 225px;
+  width: 220px;
   float: right;
   text-align: center;
   background-color: white;
   padding: 20px 0;
-  margin: 10px 3px;
+  margin: 13px 0 0 14px;
 }
 .page-main .fitting .fitting-main .fitting-main-c ul li div :nth-child(2) {
   font-size: 14px;
@@ -632,12 +653,12 @@
 }
 .page-main .fitting .fitting-main .fitting-main-c1 ul li {
   height: 280px;
-  width: 225px;
+  width: 220px;
   float: right;
   text-align: center;
   background-color: white;
   padding: 20px 0;
-  margin: 10px 3px;
+  margin: 13px 0 0 14px;
 }
 .page-main .fitting .fitting-main .fitting-main-c1 ul li div :nth-child(2) {
   font-size: 14px;
@@ -690,12 +711,12 @@
 }
 .page-main .collocation .collocation-main .collocation-main-c ul li {
   height: 280px;
-  width: 225px;
+  width: 220px;
   float: right;
   text-align: center;
   background-color: white;
   padding: 20px 0;
-  margin: 10px 3px;
+  margin: 13px 0 0 14px;
 }
 .page-main .collocation .collocation-main .collocation-main-c ul li div :nth-child(2) {
   font-size: 14px;
@@ -723,12 +744,12 @@
 }
 .page-main .collocation .collocation-main .collocation-main-c1 ul li {
   height: 280px;
-  width: 225px;
+  width: 220px;
   float: right;
   text-align: center;
   background-color: white;
   padding: 20px 0;
-  margin: 10px 3px;
+  margin: 14px 0 0 13px;
 }
 .page-main .collocation .collocation-main .collocation-main-c1 ul li div :nth-child(2) {
   font-size: 14px;
