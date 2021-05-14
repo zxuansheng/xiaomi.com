@@ -28,4 +28,4 @@ const cookie = {
     }
 };
 
-export default cookie;
+export {cookie} 

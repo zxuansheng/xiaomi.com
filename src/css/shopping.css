@@ -225,6 +225,7 @@
   font-size: 24px;
   color: orange;
   clear: both;
+  padding: 20px;
 }
 .right-pr .btn-warning {
   width: 298px;
@@ -244,6 +245,7 @@
 .price {
   padding: 30px 0;
   background-color: #f5f5f5;
+  margin-top: 30px;
 }
 .price .price-p {
   font-size: 22px;

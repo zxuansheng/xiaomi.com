@@ -45,20 +45,15 @@
 .shopcar-b-h {
     padding: 30px;
     margin: 30px;
-
-    >:first-child {
+    
+    >:nth-child(2){
         display: inline-block;
         padding-right: 70px;
     }
 
-    >:nth-child(2) {
-        display: inline-block;
-        padding-right: 400px;
-    }
-
     >:nth-child(3) {
         display: inline-block;
-        padding-right: 100px;
+        padding-right: 400px;
     }
 
     >:nth-child(4) {
@@ -68,11 +63,17 @@
 
     >:nth-child(5) {
         display: inline-block;
-        padding-right: 100px;
+        margin-left: 30px;
     }
 
     >:nth-child(6) {
         display: inline-block;
+        margin-left: 76px;
+    }
+
+    >:nth-child(7) {
+        display: inline-block;
+        margin-left: 109px;
     }
 
 }
@@ -81,36 +82,58 @@
     padding-bottom: 30px;
 
     .img1 {
-        margin-left: 70px;
+        height: 80px;
+        width: 80px;
     }
-
-    >:first-child {
+    .p-goods{
+        margin-left: 60px;
+        input{
+            display: inline-block;
+            width: 72px;
+            height: 38px;
+        }
+        a{
+            padding: 10px;
+            border: 1px gray solid;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    >:first-child{
+        display: inline-block;
+        margin-left: 60px;
+    }
+    >:nth-child(2){
         display: inline-block;
         padding-right: 10px;
-    }
-
-    >:nth-child(2) {
-        display: inline-block;
-        padding-right: 240px;
     }
 
     >:nth-child(3) {
         display: inline-block;
-        padding-right: 10px;
+        padding-right: 240px;
+        width: 450px;
     }
 
     >:nth-child(4) {
         display: inline-block;
+        padding-right: 10px;
     }
 
     >:nth-child(5) {
         display: inline-block;
-        margin-left: 10px;
     }
 
     >:nth-child(6) {
         display: inline-block;
-        margin-left: 100px;
+        padding-left: 20px;
+    }
+
+    >:nth-child(7) {
+        // display: inline-block;
+        cursor: pointer;
+        float: right;
+        margin-top: 26px;
+        margin-right: 112px;
     }
 
 }

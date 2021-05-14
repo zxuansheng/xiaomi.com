@@ -99,4 +99,29 @@ $(function () {
     $("img.lazy").lazyload({ effect: "fadeIn" });
     //
     $('.pr-miusha').slidered()
+    //渲染商品首页
+    $.ajax({
+        type: "get",
+        url: "../../interface/getData.php",
+        dataType: "json",
+        success: function (res) {
+            console.log(res)
+            let temp = '';
+            res.forEach((elm, i) => {
+                let picture = JSON.parse(elm.picture);
+                console.log(picture);
+                // console.log()
+
+                temp += `<li class="phone-ul-li">
+                            <a href="./shopping.html?id=${elm.id}">
+                                <img src="../${picture[0].src}" alt="">
+                                <p>${elm.title}</p>
+                                <p>${elm.details}</p>
+                                <p>${elm.price}元起</p>
+                            </a>
+                        </li>`;
+            });
+            $('.phone-ul').html(temp)
+        }
+    });
 });
