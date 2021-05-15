@@ -124,42 +124,14 @@ $(function () {
         }
     });
 
-    //商品滚动页
-
-    $('.span-left').on('click', function () {
-        let width = $('.pr-ul>li').width()
-        let lis = $('.pr-ul>li')
-        if ($(lis[10]).offset().left > 1606) {
-            $('.pr-ul').stop().animate({
-                left: `-=${width + 18}px`,
-            }, 500)
-
-        }else{
-            $('.pr-ul').animate({
-                left: `-=${width + 18}px`,
-            }, 1000).stop()
-        }
-
-        console.log()
-    })
+    //商品滚动列表
     $('.span-right').on('click', function () {
-        let lis = $('.pr-ul>li')
-        let width = $('.pr-ul>li').width()
-        if ($(lis[10]).offset().left < 3021){
-            $('.pr-ul').stop().animate({
-                left: `+=${width + 18}px`,
-            }, 500)
-        }else{
-            $('.pr-ul').animate({
-                left: `+=${width + 18}px`,
-            }, 500).stop()
-        }
-        console.log($(lis[10]).offset().left)
+        $('.pr-ul').css({'left':'-947px','transition':'all  2s'})
+    })
+    $('.span-left').on('click', function () {
+        $('.pr-ul').css({'left':'0','transition':'all  2s'})
     })
 
-
-
-    $('.span-right')
 
 
 });

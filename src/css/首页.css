@@ -178,7 +178,6 @@
   top: 220px;
   height: 65px;
   width: 30px;
-  border: 1px red solid;
   line-height: 65px;
   font-size: 32px;
 }
@@ -227,6 +226,7 @@
 }
 .page-main {
   background-color: #f5f5f5;
+  transition: 1s all;
 }
 .page-main .container {
   padding: 0;
@@ -235,7 +235,6 @@
   background-color: #f1eded;
   height: 339px;
   width: 230px;
-  border: 1px red solid;
   float: left;
   text-align: center;
 }
@@ -287,9 +286,26 @@
   float: left;
   height: 339px;
   width: 220px;
-  border: 1px red solid;
   margin: 0 1px;
   margin-left: 14px;
+  background-color: white;
+  text-align: center;
+}
+.page-main .pr-miusha ul li div {
+  margin-top: 10px;
+}
+.page-main .pr-miusha ul li div img {
+  height: 160px;
+  width: 160px;
+}
+.page-main .pr-miusha ul li > :nth-child(2) {
+  font-size: 14px;
+  margin-top: 40px;
+}
+.page-main .pr-miusha ul li > :nth-child(3) {
+  font-size: 12px;
+  color: #b0b0b0;
+  margin-top: 10px;
 }
 .page-main .mi-banner-1 > img {
   margin-top: 20px;
@@ -399,6 +415,7 @@
 .page-main .household .household-main {
   clear: both;
   position: relative;
+  height: 585px;
 }
 .page-main .household .household-main img {
   height: 280px;
@@ -490,6 +507,7 @@
 .page-main .mind .mind-main {
   clear: both;
   position: relative;
+  height: 585px;
 }
 .page-main .mind .mind-main img {
   height: 280px;
@@ -614,6 +632,7 @@
 .page-main .fitting .fitting-main {
   clear: both;
   position: relative;
+  height: 585px;
 }
 .page-main .fitting .fitting-main img {
   height: 280px;
@@ -705,6 +724,7 @@
 .page-main .collocation .collocation-main {
   clear: both;
   position: relative;
+  height: 585px;
 }
 .page-main .collocation .collocation-main img {
   height: 280px;
