@@ -77,15 +77,39 @@ if (shop) {
                 } else {
                     check1.prop("checked", false);
                 }
+                total()
             })
             //总计
-            
-            
+            for (let i = 0; i < check1.length; i++) {
+                $(check1[i]).on('click', function () {
+                    total()
+                })
+            }
             //总商品数量
-            
-            console.log($('.shop-c1').find('.product-mi>.p-goods>.goods-num'))
-            
 
         }
     });
 }
+function total() {
+    let num = 0;
+    let num2 =0;
+    let len = $('.p-tol').length;
+    let tol = $('.p-tol')
+    let check1 = $('.shop-c1').find($('.c-b')) //获得复选框
+    let tolnum = $('.goods-num')//获得商品的数量
+    let to_num= $('.to-num')//获得要填充的商品的数量的元素
+    let total = $('.total') //获得要填充总价的元素
+    for (let i = 0; i < len; i++) {
+        // $('.p-tol').text()
+        if (check1[i].checked) {  
+            num += parseInt(tol[i].innerText);
+            num2 += parseInt(tolnum[i].value)
+        }
+
+    }
+    total.text('合计：'+num+'元') 
+    to_num.text( '已购'+num2+'件' )
+    
+}
+
+

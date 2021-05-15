@@ -98,7 +98,6 @@ $(function () {
     $("img").attr("data-original", function () { return this.src });
     $("img.lazy").lazyload({ effect: "fadeIn" });
     //
-    $('.pr-miusha').slidered()
     //渲染商品首页
     $.ajax({
         type: "get",
@@ -124,4 +123,43 @@ $(function () {
             $('.phone-ul').html(temp)
         }
     });
+
+    //商品滚动页
+
+    $('.span-left').on('click', function () {
+        let width = $('.pr-ul>li').width()
+        let lis = $('.pr-ul>li')
+        if ($(lis[10]).offset().left > 1606) {
+            $('.pr-ul').stop().animate({
+                left: `-=${width + 18}px`,
+            }, 500)
+
+        }else{
+            $('.pr-ul').animate({
+                left: `-=${width + 18}px`,
+            }, 1000).stop()
+        }
+
+        console.log()
+    })
+    $('.span-right').on('click', function () {
+        let lis = $('.pr-ul>li')
+        let width = $('.pr-ul>li').width()
+        if ($(lis[10]).offset().left < 3021){
+            $('.pr-ul').stop().animate({
+                left: `+=${width + 18}px`,
+            }, 500)
+        }else{
+            $('.pr-ul').animate({
+                left: `+=${width + 18}px`,
+            }, 500).stop()
+        }
+        console.log($(lis[10]).offset().left)
+    })
+
+
+
+    $('.span-right')
+
+
 });

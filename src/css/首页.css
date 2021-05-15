@@ -275,17 +275,21 @@
 }
 .page-main .pr-miusha {
   position: relative;
+  height: 339px;
+  overflow: hidden;
+  width: 940px;
 }
 .page-main .pr-miusha ul {
   position: absolute;
-  left: 240px;
+  width: 3000px;
 }
 .page-main .pr-miusha ul li {
   float: left;
   height: 339px;
-  width: 230px;
+  width: 220px;
   border: 1px red solid;
   margin: 0 1px;
+  margin-left: 14px;
 }
 .page-main .mi-banner-1 > img {
   margin-top: 20px;

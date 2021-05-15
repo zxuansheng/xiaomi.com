@@ -203,6 +203,7 @@
   margin-top: 30px;
   padding: 0 30px;
   margin-bottom: 30px;
+  position: relative;
 }
 .account > :nth-child(1) {
   display: inline-block;
@@ -223,5 +224,7 @@
   display: inline-block;
   height: 50px;
   width: 202px;
-  margin-left: 30px;
+  position: absolute;
+  right: 60px;
+  top: 30px;
 }
